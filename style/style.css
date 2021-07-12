@@ -84,6 +84,11 @@ hr{
 /* ------------------
 latest courses style 
 ----------------- */
+.cources{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 22px;
+}
 .cource {
     width: 250px;
 }
