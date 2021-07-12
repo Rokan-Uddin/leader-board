@@ -8,16 +8,20 @@ body {
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 26px;
 
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 .top-players{
     margin-bottom: 21px;
@@ -50,6 +54,11 @@ hr{
 /*-----------------
  top blog style 
 -------------- */
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
 .blog {
     display: flex;
 }
