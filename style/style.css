@@ -16,6 +16,37 @@ hr{
     margin-bottom: 26px;
 
 }
+/* ----------------
+ header style  
+ ---------------*/
+
+ .navbar{
+    background-color: #562EFF;
+     display: flex;
+     justify-content: space-between;
+     padding:0px 200px 0 200px;
+ }
+ .nav-half{
+    display: flex;
+    align-items: center;
+ }
+
+.nav-half a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 5px;
+}
+.nav-half img{
+    width: 40.42px;
+    height: 51px;
+}
+.link-text{
+    margin: 15px;
+}
+/* ----------------
+    main style 
+---------------- */
+
 .container{
     background-color: #FFFFFF;
     width: 870px;
@@ -90,7 +121,8 @@ latest courses style
     grid-column-gap: 22px;
 }
 .cource {
-    width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 .cource .cource-banner img{
     width: 224px;
@@ -138,22 +170,50 @@ latest courses style
 /* Media Queries  */
 /* Mobile Device */
 @media only screen and (max-width:688px) {
+    .navbar{
+        padding:0px;
+    }
+    .link-text{
+        margin: 3px;
+    }
     .container{
         width: 100%;
     }
     .players,.cources,.blogs{
         grid-template-columns: repeat(1,1fr);
     }
-    .player, .blog{
+    .player, .blog, .cource{
         flex-direction: column;
+        align-items: center;
+        
+    }
+    .section-title{
+        text-align: center;
+    }
+    .cource-title,.blog-title{
+        text-align: center;
+        width: 100%;
+    }
+    .cource-author,.blog-author{
+        text-align: center;
     }
 }
 /* Ipad Device */
 @media only screen and (min-width:689px) and (max-width:992px) {
+    .navbar{
+        padding:10px;
+    }
     .container{
         width: 100%;
     }
+    .section-title{
+        text-align: center;
+    }
     .players,.cources{
         grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    .cource,.blog{
+        align-items: center;
     }
 }
