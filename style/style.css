@@ -3,6 +3,7 @@
 
 /* common style  */
 body {
+    margin: 0px;
     font-family: 'Poppins', sans-serif;
     background-color: #E5E5E5;
 }
@@ -24,7 +25,7 @@ hr{
     background-color: #562EFF;
      display: flex;
      justify-content: space-between;
-     padding:0px 200px 0 200px;
+     padding:0px 220px 0 220px;
  }
  .nav-half{
     display: flex;
@@ -50,8 +51,9 @@ hr{
 .container{
     background-color: #FFFFFF;
     width: 870px;
-    padding: 30px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-left: 285px;
+    margin-right: 285px;
     border-radius: 5px;
 }
 .top-players{
@@ -178,6 +180,7 @@ latest courses style
     }
     .container{
         width: 100%;
+        padding: 0px;
     }
     .players,.cources,.blogs{
         grid-template-columns: repeat(1,1fr);
@@ -205,6 +208,7 @@ latest courses style
     }
     .container{
         width: 100%;
+        padding: 0px;
     }
     .section-title{
         text-align: center;
